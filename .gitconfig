@@ -1,0 +1,15 @@
+[alias]
+    st = status
+	lol = log --graph --decorate=short --pretty=oneline --abbrev-commit
+    loll = log --graph --pretty=format:\"%C(yellow)%d%Creset %h %C(red)%cn%Creset %C(blue)%cd%Creset %s\" --date=short --decorate=short
+    lolla = log --graph --pretty=format:\"%C(yellow)%d%Creset %h %C(red)%cn%Creset %C(blue)%cd%Creset %s\" --date=short --decorate=short --all
+    lola = log --graph --decorate=short --pretty=oneline --abbrev-commit --all
+    files = "!f() { git diff --name-status $1^ $1; }; f"
+    changes = "!f() { git diff $1^ $1; }; f"
+[user]
+	email = youssef.kashef@gmail.com
+	name = Youssef Kashef
+[color]
+	ui = auto
+[diff]
+	tool = meld
