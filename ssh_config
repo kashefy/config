@@ -1,0 +1,6 @@
+Host freddy
+	Compression yes
+    HostName 123.456.789.67
+    Ciphers blowfish-cbc,arcfour
+    Port 22
+
